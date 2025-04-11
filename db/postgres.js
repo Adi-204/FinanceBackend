@@ -4,7 +4,8 @@ import 'dotenv/config';
 
 
 const pool = new Pool({
-    connectionString : process.env.connectionString
+    connectionString : process.env.connectionString,
+    keepAlive: true
 });
 
 const db = {
